@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxj3680usa10j"]
+
+[ext_resource type="Script" path="res://scene/EUQIM.gd" id="1_iy3l7"]
+[ext_resource type="PackedScene" uid="uid://c2b14p3a0y2gt" path="res://scene/equpannel.tscn" id="2_bi52a"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -506.0
+offset_bottom = -78.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("1_iy3l7")
+
+[node name="EQUPANNEL" parent="." instance=ExtResource("2_bi52a")]
+layout_mode = 1
+offset_left = -257.0
+offset_right = 257.0
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

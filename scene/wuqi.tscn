@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhhiufkahl5"]
+
+[ext_resource type="Texture2D" uid="uid://dp8rcqpajlqxq" path="res://texture/items_box_1.png" id="1_inhcu"]
+[ext_resource type="Script" path="res://wuqi.gd" id="2_4ok43"]
+
+[node name="wuqi" type="TextureRect"]
+offset_left = 50.0
+offset_top = 343.0
+offset_right = 170.0
+offset_bottom = 463.0
+texture = ExtResource("1_inhcu")
+expand_mode = 1
+script = ExtResource("2_4ok43")
+type = "weapon"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -6.0
+offset_top = -4.0
+offset_right = -6.0
+offset_bottom = 22.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "weapon"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -49.0
+offset_top = -43.0
+offset_right = 49.0
+offset_bottom = 51.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
